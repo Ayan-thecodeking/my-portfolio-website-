@@ -39,6 +39,74 @@ html::-webkit-scrollbar-track{
 html::-webkit-scrollbar-thumb{
     background-color: var(--main-color);
 }
+/* side baar ----------------------------------------------------- */
+
+.icon-bar{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    z-index: 100;
+}
+.icon-bar a{
+text-decoration: none;
+width: 170px;
+background: #3b5999;
+color: #fff;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+padding: 5px;
+font-size: 12
+px;
+transform: translateX(-130px);
+-webkit-transform: translateX(-130px);
+-ms-transform: translateX(-130px);
+
+transition:all 0.5s linear ;
+-webkit-transition: all 0.5s linear;
+-ms-transition: all 0.5s linear;
+}
+a i{
+padding-left: 20px;
+font-size: 25px ! important;
+animation: letszoom 3s linear alternate-reverse infinite  ;
+}
+
+@keyframes letszoom{
+    from{
+transform: scale(0.8);
+    }
+    to{
+transform: scale(1);
+    }
+}
+
+a:hover{
+    transform: translateX(0);
+-webkit-transform: translateX(0);
+-ms-transform: translateX(0);
+}
+.icon-bar .instagram{
+    background: #e4405f;
+}
+.icon-bar .twitter{
+    background: #00aced;
+}
+.icon-bar .youtube{
+    background: #cd201f;
+}
+.icon-bar .linkdin{
+    background: #0077B5;
+}
+.icon-bar .facebook{
+    background: #3b5998;
+}
+.icon-bar .github{
+    background: #242120 ;
+}
+
 
 body{
     background:var(--secondary-bg-color);
@@ -499,6 +567,10 @@ section{
     display: block;
     font-size: 2.5rem;
     padding:.5rem 0;
+}
+.blog .box-container .box .content .btn{
+    padding: 2.5rem;
+    margin: 5rem;
 }
 
 .blog .box-container .box .content .title:hover{
